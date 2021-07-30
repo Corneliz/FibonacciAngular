@@ -3,6 +3,7 @@ import { CalculatorService } from 'src/app/services/calculator.service';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { CalculatorComponent } from './calculator.component';
 import { FormsModule } from '@angular/forms';
+import { of } from 'rxjs';
 
 describe('CalculatorComponent', () => {
   let component: CalculatorComponent;
@@ -10,7 +11,7 @@ describe('CalculatorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule,FormsModule],
+      imports: [HttpClientTestingModule, FormsModule],
       declarations: [CalculatorComponent],
       providers: [CalculatorService]
     })
@@ -28,6 +29,9 @@ describe('CalculatorComponent', () => {
   });
   it("should be able to calculate a Fibonacci number", function () {
     component.numb = 8;
+    const restService = TestBed.inject(CalculatorService);
+    const data = { result: 21 };
+    spyOn(restService, 'getFibonacci').and.returnValue(of(data));
     component.calculate();
     fixture.detectChanges();
     expect(component.result.result).toEqual(21);
