@@ -1,0 +1,67 @@
+$color-primary: #1797ff;
+
+.toolbar {
+    margin: 0 0 70px;
+    padding: 44px 0px 44px 150px;
+    box-shadow: 0 1px 4px 0 rgba(0, 21, 41, 0.12);
+    background-image: linear-gradient(to bottom, #ececec -32%, #ffffff 124%);
+}
+.my-title {
+    width: 208px;
+    height: 28px;
+    object-fit: contain;
+    font-family: 'Lato';
+    font-size: 28px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #3b3b3b;
+}
+.Front-End-Test---Home-view {
+    height: 89vh;
+    padding: 0 0 98px;
+    background-color: #fcfcfc;
+}
+.My-faves {
+    width: 65px;
+    height: 28px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: #606060;
+}
+.Rectangle-all {
+    width: 98px;
+    height: 31px;
+    padding: 3px 16px 0 17px;
+    border-radius: 2px;
+    border: solid 1px $color-primary;
+    color: $color-primary;
+}
+.Rectangle-my-faves {
+    width: 98px;
+    height: 31px;
+    padding: 3px 16px 0 17px;
+    border-radius: 2px;
+    border: solid 1px #d6d6d6;
+}
+.All {
+    width: 19px;
+    height: 28px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1797ff;
+}

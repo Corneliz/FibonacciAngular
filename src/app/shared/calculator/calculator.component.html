@@ -1,0 +1,18 @@
+<section class="box d-flex">
+    <div>
+        <div class="d-flex">
+            <input id="my-input" [(ngModel)]="numb" type="number" placeholder="Ingrese un número"
+                class="form-control mt-2">
+        </div>
+        <p class="title-fav">
+            <span *ngIf="result?.result && errorMsg =='' "> El n-ésimo término de la sucesión de Fibonacci para {{numbToShow}} es
+                {{result?.result}}</span>
+            <span *ngIf="errorMsg !=''">{{errorMsg}}</span>
+        </p>
+    </div>
+    <div class="inner-box">
+        <div class="Shape" (click)="calculate()">
+            Calcular
+        </div>
+    </div>
+</section>
